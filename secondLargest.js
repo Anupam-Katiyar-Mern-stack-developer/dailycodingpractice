@@ -1,23 +1,19 @@
-function secondLargest(arr){
-    let largest =arr[0];
-    let slargest =largest;
-
+function SecondLargest(arr){
+    let largest = 0;
+    let slargest =0;
 
     for(let i of arr){
-
-        if(i > largest){
-            slargest = largest;
-            largest =i; 
-        } else if(i < largest  && i > slargest){
-            slargest = i;
-            
+        if(i>largest ){
+            slargest=largest;
+            largest =i;
+        }else if (i>slargest && i<largest){
+            slargest=i;
         }
     }
 
     return slargest;
 }
 
-const array =[10, 30, 20, 30, 15];
+let arr =[9,4,6,20,10,8,5];
 
-const result =secondLargest(array);
-console.log(result);
+console.log(SecondLargest(arr));

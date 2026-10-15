@@ -1,18 +1,22 @@
-function CountAfterZeero(arr) {
-  let count = 0;
-  let check = false;
 
-  for (let i of arr) {
-    if (i === 0) {
-      check = true;
-    } else if (check === true) {
+
+function countAfterZeero (arr){
+
+  let check =false;
+  let count =0;
+
+  for(let i of arr){
+    if(i ===0 ){
+      check =true;
+    }
+    else if(check ===true){
       count++;
     }
   }
   return count;
 }
 
-const arr = [5, 8, 0, 4, 7, 2, 9];
-const result = CountAfterZeero(arr);
+const arr =[6,5 ,3 ,0, 4,9,10];
 
+let result = countAfterZeero(arr);
 console.log(result);
