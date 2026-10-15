@@ -17,7 +17,6 @@ function CountAverage(arr) {
   return count;
 }
 
-
-const arr =[4, 8, 2, 10, 6];
+const arr = [4, 8, 2, 10, 6];
 
 console.log(CountAverage(arr));
